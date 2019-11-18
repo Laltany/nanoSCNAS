@@ -1,0 +1,2942 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.nanopub.org/nschema"
+     xml:base="http://www.nanopub.org/nschema"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:np="http://www.nanopub.org/nschema#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfg="http://www.w3.org/2004/03/trix/rdfg-1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:datacite="http://purl.org/spar/datacite/"
+     xmlns:SNAMetric="http://ns.inria.fr/semsna/2009/06/21/SNAMetric#"
+     xmlns:XMLSchema="http://www.w3.org/2000/10/XMLSchema#">
+    <owl:Ontology rdf:about="http://www.nanopub.org/nschema">
+        <owl:imports rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS"/>
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-10-26</dc:created>
+        <dc:description rdf:resource="http://www.nanopub.org/2013/WD-guidelines-20131215/"/>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-23</dc:modified>
+        <owl:priorVersion rdf:resource="http://www.nanopub.org/nschema-1.9"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/created"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#category -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#category"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#component -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#component"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#constraints -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#constraints"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#definition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#dm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#dm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#editorsDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#editorsDefinition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#inverse -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#inverse"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#n -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#n"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#sharesDefinitionWith -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#sharesDefinitionWith"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#unqualifiedForm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#unqualifiedForm"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#consistsOf -->
+
+    <rdf:Description rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#consistsOf">
+        <rdfs:domain rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Region"/>
+        <rdfs:range rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Region"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#isPartOf -->
+
+    <rdf:Description rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#isPartOf">
+        <rdfs:domain rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Region"/>
+        <rdfs:range rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Region"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/spar/datacite/hasCreatorList -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/datacite/hasCreatorList">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/datacite/hasDescription -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/datacite/hasDescription">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/datacite/hasDescriptionType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/datacite/hasDescriptionType">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/hasDescription"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/datacite/hasGeneralResourceType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/datacite/hasGeneralResourceType">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/datacite/hasIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/datacite/hasIdentifier">
+        <rdfs:range rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/datacite/usesIdentifierScheme -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme">
+        <rdfs:domain rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#hasAssertion -->
+
+    <owl:ObjectProperty rdf:about="http://www.nanopub.org/nschema#hasAssertion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <rdfs:range rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#hasDataProvenance -->
+
+    <owl:ObjectProperty rdf:about="http://www.nanopub.org/nschema#hasDataProvenance"/>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#hasProvenance -->
+
+    <owl:ObjectProperty rdf:about="http://www.nanopub.org/nschema#hasProvenance">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <rdfs:range rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#hasPublicationInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.nanopub.org/nschema#hasPublicationInfo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <rdfs:range rdf:resource="http://www.nanopub.org/nschema#PublicationInfo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#after -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#after">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#before -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#before">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasBeginning -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasBeginning">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasDateTimeDescription -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasDateTimeDescription">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasEnd -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasEnd">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasTemporalDuration -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTemporalDuration">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inDateTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inDateTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inTemporalPosition -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inTemporalPosition">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inTimePosition -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inTimePosition">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inside -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inside">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalAfter -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalAfter">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalBefore -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalBefore">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalContains -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalContains">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalDisjoint -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalDisjoint">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalDuring -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalDuring">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalEquals -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalEquals">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalFinishedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalFinishedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalFinishes -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalFinishes">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalIn -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalIn">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalMeets -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalMeets">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalMetBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalMetBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalOverlappedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalOverlappedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalOverlaps -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalOverlaps">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalStartedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalStartedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalStarts -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalStarts">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#actedOnBehalfOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#actedOnBehalfOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#activity -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#activity">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#ActivityInfluence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#agent">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#atLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#atLocation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <rdfs:comment xml:lang="en">The Location of any resource.</rdfs:comment>
+        <rdfs:comment>This property has multiple RDFS domains to suit multiple OWL Profiles. See &lt;a href=&quot;#owl-profile&quot;&gt;PROV-O OWL Profile&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>atLocation</rdfs:label>
+        <prov:category>expanded</prov:category>
+        <prov:editorialNote xml:lang="en">The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes.</prov:editorialNote>
+        <prov:editorialNote xml:lang="en">This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair).</prov:editorialNote>
+        <prov:inverse>locationOf</prov:inverse>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#entity -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#entity">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadActivity">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Delegation"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Derivation"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#End"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Start"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadGeneration -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadGeneration">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadPlan">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Association"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadRole">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Association"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadUsage -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadUsage">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influencer -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#influencer">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#invalidated -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#invalidated">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAssociation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAssociation">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Association"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAttribution -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedCommunication -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedCommunication">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Communication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedDelegation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedDelegation">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Delegation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedDerivation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedDerivation">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedEnd">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#End"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedGeneration -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedInfluence -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedInfluence">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedInvalidation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedInvalidation">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Invalidation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedStart -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedStart">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Start"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedUsage -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedUsage">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasEndedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasEndedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <prov:definition>influencee: an identifier (o2) for an entity, activity, or agent; </prov:definition>
+        <prov:dm>http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence</prov:dm>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <prov:definition>influencer: an identifier (o1) for an ancestor entity, activity, or agent that the former depends on;</prov:definition>
+        <prov:dm>http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence</prov:dm>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInformedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInvalidatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInvalidatedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasStartedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasStartedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/fabio/hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/spar/fabio/hasURL"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasXSDDuration -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasXSDDuration">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDDate -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inXSDDate">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDDateTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inXSDDateTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDDateTimeStamp -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inXSDDateTimeStamp">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDgYear -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inXSDgYear">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDgYearMonth -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#inXSDgYearMonth">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#xsdDateTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#xsdDateTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#endedAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#endedAtTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#startedAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>A name for some thing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label xml:lang="en">foaf:name</rdfs:label>
+        <rdfs:label>name</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Administrative_Region -->
+
+    <owl:Class rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Administrative_Region">
+        <rdfs:subClassOf rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Region"/>
+        <rdfs:label xml:lang="en">Administrative region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Country -->
+
+    <owl:Class rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Country">
+        <rdfs:subClassOf rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Administrative_Region"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <rdfs:label xml:lang="sk">krajina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#County -->
+
+    <owl:Class rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#County">
+        <rdfs:subClassOf rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Administrative_Region"/>
+        <rdfs:label xml:lang="en">County</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Region -->
+
+    <owl:Class rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Region">
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+        <rdfs:label xml:lang="sk">región</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Settlement -->
+
+    <owl:Class rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Settlement">
+        <rdfs:subClassOf rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Administrative_Region"/>
+        <rdfs:label xml:lang="en">Settlement</rdfs:label>
+        <rdfs:label xml:lang="sk">Sídlo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#State -->
+
+    <owl:Class rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#State">
+        <rdfs:subClassOf rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Administrative_Region"/>
+        <rdfs:label xml:lang="en">State</rdfs:label>
+        <rdfs:label xml:lang="sk">Štát</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Street -->
+
+    <owl:Class rdf:about="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Street">
+        <rdfs:subClassOf rdf:resource="http://nazou.fiit.stuba.sk/nazou/ontologies/v0.6.17/region#Administrative_Region"/>
+        <rdfs:label xml:lang="en">Street</rdfs:label>
+        <rdfs:label xml:lang="sk">Ulica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/p-plan#Activity -->
+
+    <owl:Class rdf:about="http://purl.org/net/p-plan#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/AgentIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/AgentIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+        <rdfs:comment xml:lang="en">An identifier that uniquely identities an individual agent, belonging to a particular identifier scheme specified by an individual within the class datacite:AgentIdentifierScheme (or any of its subclasses).</rdfs:comment>
+        <rdfs:label xml:lang="en">agent identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/AgentIndetifierScheme -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/AgentIndetifierScheme">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/AlternateResourceIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/AlternateResourceIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+        <owl:disjointWith rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <rdfs:comment xml:lang="en">An identifier other than a DOI that is used as an alternative identifier to uniquely identifies the primary resource that is the subject of the DataCite metadata record, belonging to a particular scheme such as ISBN specified by an individual that is a member of the class datacite:ResourceIdentifierScheme. </rdfs:comment>
+        <rdfs:label xml:lang="en">alternate resource identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/FunderIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/FunderIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/FunderIdentifierScheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An identifier that uniquely identities a funding agency, belonging to a particular scheme such as FundRef specified by an individual within the class datacite:FunderIdentifierScheme.</rdfs:comment>
+        <rdfs:label xml:lang="en">funder identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/FunderIdentifierScheme -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/FunderIdentifierScheme">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/FunderIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/Identifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/Identifier">
+        <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2010/06/literalreification/Literal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An identifier that uniquely identities an entity – such as a funding agency, a person and a resource – belonging to a particular scheme such as those specified by individuals of the class datacite:IdentifierScheme.</rdfs:comment>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/IdentifierScheme -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/IdentifierScheme"/>
+    
+
+
+    <!-- http://purl.org/spar/datacite/OrganizationIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/OrganizationIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/OrganizationIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An identifier that uniquely identities an individual organization, belonging to a particular identifier scheme such as ISNI specified by an individual within the class datacite:OrganizationIdentifierScheme.</rdfs:comment>
+        <rdfs:label xml:lang="en">organization identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/OrganizationIdentifierScheme -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/OrganizationIdentifierScheme">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/OrganizationIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/PersonalIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/PersonalIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An identifier that uniquely identities an individual person, belonging to a particular identifier scheme such as ORCID specified by an individual within the class datacite:PersonalIdentifierScheme.</rdfs:comment>
+        <rdfs:label xml:lang="en">personal identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/PersonalIdentifierScheme -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/PrimaryResourceIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/PrimaryResourceIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+        <rdfs:comment xml:lang="en">An identifier that is used as the primary identifier to uniquely identifies the primary resource that is the subject of the DataCite metadata record.  Within the DataCite metadata record, a Digital Object Identifier is the only permitted primary resource identifier scheme, specified by the individual datacite:doi, that is a member of the class datacite:ResourceIdentifierScheme.</rdfs:comment>
+        <rdfs:label xml:lang="en">primary resource identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/ResourceIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/ResourceIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An identifier that is used to uniquely identifies a resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">resource identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/ResourceIdentifierScheme -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/ResourceIdentifierScheme">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/datacite/ResourceIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2010/06/literalreification/Literal -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/2010/06/literalreification/Literal"/>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Assertion -->
+
+    <owl:Class rdf:about="http://www.nanopub.org/nschema#Assertion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#DataProvenance -->
+
+    <owl:Class rdf:about="http://www.nanopub.org/nschema#DataProvenance">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Nanopublication -->
+
+    <owl:Class rdf:about="http://www.nanopub.org/nschema#Nanopublication"/>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Provenance -->
+
+    <owl:Class rdf:about="http://www.nanopub.org/nschema#Provenance">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#PublicationInfo -->
+
+    <owl:Class rdf:about="http://www.nanopub.org/nschema#PublicationInfo">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowExecutionProcess -->
+
+    <owl:Class rdf:about="http://www.opmw.org/ontology/WorkflowExecutionProcess">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/03/trix/rdfg-1/Graph -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#DateTimeInterval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#DateTimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:comment xml:lang="en">DateTimeInterval is a subclass of ProperInterval, defined using the multi-element DateTimeDescription.</rdfs:comment>
+        <rdfs:label xml:lang="en">Date-time interval</rdfs:label>
+        <skos:definition xml:lang="en">DateTimeInterval is a subclass of ProperInterval, defined using the multi-element DateTimeDescription.</skos:definition>
+        <skos:note xml:lang="en">:DateTimeInterval can only be used for an interval whose limits coincide with a date-time element aligned to the calendar and timezone indicated. For example, while both have a duration of one day, the 24-hour interval beginning at midnight at the beginning of 8 May in Central Europe can be expressed as a :DateTimeInterval, but the 24-hour interval starting at 1:30pm cannot.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:comment xml:lang="en">A temporal entity with zero extent or duration</rdfs:comment>
+        <rdfs:label xml:lang="en">Time instant</rdfs:label>
+        <skos:definition xml:lang="en">A temporal entity with zero extent or duration</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">A temporal entity with an extent or duration</rdfs:comment>
+        <rdfs:label xml:lang="en">Time interval</rdfs:label>
+        <skos:definition xml:lang="en">A temporal entity with an extent or duration</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#ProperInterval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#ProperInterval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:comment xml:lang="en">A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different</rdfs:comment>
+        <rdfs:label xml:lang="en">Proper interval</rdfs:label>
+        <skos:definition xml:lang="en">A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Instant"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A temporal interval or instant.</rdfs:comment>
+        <rdfs:label xml:lang="en">Temporal entity</rdfs:label>
+        <skos:definition xml:lang="en">A temporal interval or instant.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Activity</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#ActivityInfluence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#ActivityInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#hadActivity"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:comment xml:lang="en">ActivityInfluence provides additional descriptions of an Activity&apos;s binary influence upon any other kind of resource. Instances of ActivityInfluence use the prov:activity property to cite the influencing Activity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is not recommended that the type ActivityInfluence be asserted without also asserting one of its more specific subclasses.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>ActivityInfluence</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#activity"/>
+        <prov:category>qualified</prov:category>
+        <prov:editorsDefinition xml:lang="en">ActivitiyInfluence is the capacity of an activity to have an effect on the character, development, or behavior of another by means of generation, invalidation, communication, or other.</prov:editorsDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Agent</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&apos;s activity. </prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#AgentInfluence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#AgentInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:comment xml:lang="en">AgentInfluence provides additional descriptions of an Agent&apos;s binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>AgentInfluence</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#agent"/>
+        <prov:category>qualified</prov:category>
+        <prov:editorsDefinition xml:lang="en">AgentInfluence is the capacity of an agent to have an effect on the character, development, or behavior of another by means of attribution, association, delegation, or other.</prov:editorsDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Association -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Association">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedAssociation [ a prov:Association; prov:agent :baker; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Association</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Association</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Association</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Attribution -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Attribution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Attribution</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">Attribution is the ascribing of an entity to an agent.
+
+When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribution</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribution</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Communication -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#ActivityInfluence"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Communication provides additional descriptions about the binary prov:wasInformedBy relation from an informed prov:Activity to the prov:Activity that informed it. For example, :you_jumping_off_bridge prov:wasInformedBy :everyone_else_jumping_off_bridge; prov:qualifiedCommunication [ a prov:Communication; prov:activity :everyone_else_jumping_off_bridge; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Communication</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition>Communication is the exchange of an entity by two activities, one activity using the entity generated by the other.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Communication</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-wasInformedBy</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasInformedBy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Delegation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Delegation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Delegation provides additional descriptions about the binary prov:actedOnBehalfOf relation from a performing prov:Agent to some prov:Agent for whom it was performed. For example, :mixing prov:wasAssociatedWith :toddler . :toddler prov:actedOnBehalfOf :mother; prov:qualifiedDelegation [ a prov:Delegation; prov:entity :mother; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Delegation</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">Delegation is the assignment of authority and responsibility to an agent (by itself or by another agent) to carry out a specific activity as a delegate or representative, while the agent it acts on behalf of retains some responsibility for the outcome of the delegated work.
+
+For example, a student acted on behalf of his supervisor, who acted on behalf of the department chair, who acted on behalf of the university; all those agents are responsible in some way for the activity that took place but we do not say explicitly who bears responsibility and to what degree.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-delegation</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-delegation</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Derivation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Derivation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Derivation provides additional descriptions about the binary prov:wasDerivedFrom relation from some derived prov:Entity to another prov:Entity from which it was derived. For example, :chewed_bubble_gum prov:wasDerivedFrom :unwrapped_bubble_gum; prov:qualifiedDerivation [ a prov:Derivation; prov:entity :unwrapped_bubble_gum; :foo :bar ].</rdfs:comment>
+        <rdfs:comment xml:lang="en">The more specific forms of prov:Derivation (i.e., prov:Revision, prov:Quotation, prov:PrimarySource) should be asserted if they apply.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Derivation</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>derivations</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Derivation</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#Derivation-Relation</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#End -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#End">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">An instance of prov:End provides additional descriptions about the binary prov:wasEndedBy relation from some ended prov:Activity to an prov:Entity that ended it. For example, :ball_game prov:wasEndedBy :buzzer; prov:qualifiedEnd [ a prov:End; prov:entity :buzzer; :foo :bar; prov:atTime &apos;2012-03-09T08:05:08-05:00&apos;^^xsd:dateTime ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>End</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity&apos;s end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-End</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-End</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasEndedBy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#EntityInfluence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#EntityInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:comment xml:lang="en">EntityInfluence provides additional descriptions of an Entity&apos;s binary influence upon any other kind of resource. Instances of EntityInfluence use the prov:entity property to cite the influencing Entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is not recommended that the type EntityInfluence be asserted without also asserting one of its more specific subclasses.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>EntityInfluence</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#entity"/>
+        <prov:category>qualified</prov:category>
+        <prov:editorsDefinition xml:lang="en">EntityInfluence is the capacity of an entity to have an effect on the character, development, or behavior of another by means of usage, start, end, derivation, or other. </prov:editorsDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Generation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Generation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#ActivityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Generation provides additional descriptions about the binary prov:wasGeneratedBy relation from a generated prov:Entity to the prov:Activity that generated it. For example, :cake prov:wasGeneratedBy :baking; prov:qualifiedGeneration [ a prov:Generation; prov:activity :baking; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Generation</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Generation</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Generation</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Influence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Influence">
+        <rdfs:comment xml:lang="en">An instance of prov:Influence provides additional descriptions about the binary prov:wasInfluencedBy relation from some influenced Activity, Entity, or Agent to the influencing Activity, Entity, or Agent. For example, :stomach_ache prov:wasInfluencedBy :spoon; prov:qualifiedInfluence [ a prov:Influence; prov:entity :spoon; :foo :bar ] . Because prov:Influence is a broad relation, the more specific relations (Communication, Delegation, End, etc.) should be used when applicable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Influence</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>derivations</prov:component>
+        <prov:definition xml:lang="en">Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-influence</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#InstantaneousEvent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Invalidation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Invalidation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#ActivityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Invalidation provides additional descriptions about the binary prov:wasInvalidatedBy relation from an invalidated prov:Entity to the prov:Activity that invalidated it. For example, :uncracked_egg prov:wasInvalidatedBy :baking; prov:qualifiedInvalidation [ a prov:Invalidation; prov:activity :baking; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Invalidation</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition>Invalidation is the start of the destruction, cessation, or expiry of an existing entity by an activity. The entity is no longer available for use (or further invalidation) after invalidation. Any generation or usage of an entity precedes its invalidation.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Invalidation</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Invalidation</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Location -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Location">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Location</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
+        <prov:category>expanded</prov:category>
+        <prov:definition xml:lang="en">A location can be an identifiable geographic place (ISO 19112), but it can also be a non-geographic place such as a directory, row, or column. As such, there are numerous ways in which location can be expressed, such as by a coordinate, address, landmark, and so forth.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-location</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Organization</rdfs:label>
+        <prov:category>expanded</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition>An organization is a social or legal institution such as a company, society, etc.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Person</rdfs:label>
+        <prov:category>expanded</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">Person agents are people.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#PrimarySource -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#PrimarySource">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Quotation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Quotation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Revision -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Revision">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>SoftwareAgent</rdfs:label>
+        <prov:category>expanded</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">A software agent is running software.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Start -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Start">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Start provides additional descriptions about the binary prov:wasStartedBy relation from some started prov:Activity to an prov:Entity that started it. For example, :foot_race prov:wasStartedBy :bang; prov:qualifiedStart [ a prov:Start; prov:entity :bang; :foo :bar; prov:atTime &apos;2012-03-09T08:05:08-05:00&apos;^^xsd:dateTime ] .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Start</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity&apos;s start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Start</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Start</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasStartedBy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Usage -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Usage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Usage provides additional descriptions about the binary prov:used relation from some prov:Activity to an prov:Entity that it used. For example, :keynote prov:used :podium; prov:qualifiedUsage [ a prov:Usage; prov:entity :podium; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Usage</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Usage</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Usage</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#used"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Amy_Jamison_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Amy_Jamison_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Amy Jamison</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Andreea_Nita_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Andreea_Nita_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Andreea Nita</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Antonio_Braz_de_OliveiraESilva_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Antonio_Braz_de_OliveiraESilva_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antonio Braz de Oliveira e Silva</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Antonio_Braz_de_Oliveira_e_Silva_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Antonio_Braz_de_Oliveira_e_Silva_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antonio Braz de Oliveira e Silva </foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Bradley_W._Fenwick_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Bradley_W._Fenwick_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Bradley W. Fenwick</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#ChaoLong_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#ChaoLong_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>ChaoLong</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Chengliang_Liu_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Chengliang_Liu_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Chengliang Liu</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#China_Na_onal_Knowledge_Infrastructure -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#China_Na_onal_Knowledge_Infrastructure">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>China Naonal Knowledge Infrastructure (CNKI)</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Chinese_Social_Science_Cita_on_Index -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Chinese_Social_Science_Cita_on_Index">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>Chinese Social Science Citaon Index (CSSCI)</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Core_journals_of_Peking_University -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Core_journals_of_Peking_University">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>Core journals of Peking University (core journals)</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#David_John_Lemay_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#David_John_Lemay_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>David John Lemay</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Debin_Du_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Debin_Du_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Debin Du</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Ehsan_Geraei_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Ehsan_Geraei_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ehsan Geraei</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Farideh_Osareh_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Farideh_Osareh_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farideh Osareh</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Fernando_Silva_Parreiras_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Fernando_Silva_Parreiras_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fernando Silva Parreiras</foaf:name>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fernando Silva Parreiras </foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Firoozeh_Zare-Farashbandi_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Firoozeh_Zare-Farashbandi_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firoozeh Zare-Farashbandi</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#ISI_WoS_Core_Collection -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#ISI_WoS_Core_Collection">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>ISI WoS Core Collection (SCIE, SSCI and A&amp;HCI databases)</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Jamie_Monson_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Jamie_Monson_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Jamie Monson</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Jane_G._Payumo_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Jane_G._Payumo_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Jane G. Payumo</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#JuanM.C.Larrosa_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#JuanM.C.Larrosa_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>JuanM.C.Larrosa </foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Mansoor_Koohi_Rostami_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Mansoor_Koohi_Rostami_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mansoor Koohi Rostami</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Mansoureh_Serati_Shiraz_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Mansoureh_Serati_Shiraz_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mansoureh Serati Shiraz</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#MarkA.Hall_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#MarkA.Hall_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>MarkA.Hall</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Munique_Rech_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Munique_Rech_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Munique Rech</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Paul_Bazelais_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Paul_Bazelais_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Paul Bazelais</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Pelayo_Munhoz_Olea_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Pelayo_Munhoz_Olea_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pelayo Munhoz Olea</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Qinchang_Gui_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Qinchang_Gui_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Qinchang Gui</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#QingChang_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#QingChang_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>QingChang</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Ram_B._Basnet_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Ram_B._Basnet_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Ram B. Basnet</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Renato_Fabiano_Matheus_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Renato_Fabiano_Matheus_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renato Fabiano Matheus</foaf:name>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renato Fabiano Matheus </foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Romario_Laltany -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Romario_Laltany">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Romario Laltany Goulart da Silva</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Rouhallah_Khademi_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Rouhallah_Khademi_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Rouhallah Khademi</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Saba_Siamaki_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Saba_Siamaki_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Saba Siamaki</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Sameer_Kumar_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Sameer_Kumar_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Sameer Kumar</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Scopus -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Scopus">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>Scopus</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Tatiane_A._Silva_Parreiras_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Tatiane_A._Silva_Parreiras_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tatiane A. Silva Parreiras </foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Taís_Araldi_Reichert_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Taís_Araldi_Reichert_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taís Araldi Reichert</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Tenzin_Doleck_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Tenzin_Doleck_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Tenzin Doleck</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Tiago_Novaes_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Tiago_Novaes_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiago Novaes</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Twitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Twitter">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>Twitter</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Web_of_Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Web_of_Science"/>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Wladmir_Cardoso_Brandão_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Wladmir_Cardoso_Brandão_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wladmir Cardoso Brandão </foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#ZhiguangDuan_Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#ZhiguangDuan_Author">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>ZhiguangDuan</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#eAAEP_site -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#eAAEP_site">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>eAAEP site</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub10_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub10_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://hdl.handle.net/10760/11055</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub10_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub10_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS10"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub10_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub10_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub10_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub10_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Antonio_Braz_de_OliveiraESilva_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Fernando_Silva_Parreiras_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Renato_Fabiano_Matheus_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Wladmir_Cardoso_Brandão_Author"/>
+        <dc:title>PROFESSORS OF INFORMATION SCIENCE CO-AUTHORSHIP NETWORK: A PICTURE OF SCIENTIFIC COLLABORATION IN THIS FIELD IN BRAZIL</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub11_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub11_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1080/09737766.2014.1015301</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub11_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub11_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS11"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub11_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub11_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub11_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub11_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Farideh_Osareh_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Mansoor_Koohi_Rostami_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Mansoureh_Serati_Shiraz_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Rouhallah_Khademi_Author"/>
+        <dc:title>Co-authorship Network Structure Analysis of Iranian Researchers’ scientific outputs from 1991 to 2013 based on the Social Science Citation Index (SSCI)</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub12_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub12_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ucs.br/etc/conferencias/index.php/mostraucsppga/xvimostrappga/paper/viewFile/4781/1653</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub12_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub12_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS12"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub12_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub12_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub12_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub12_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Munique_Rech_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Pelayo_Munhoz_Olea_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Taís_Araldi_Reichert_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Tiago_Novaes_Author"/>
+        <dc:title>Redes de Colaboração Científica: Um Estudo de Coautoria Através da Análise de Redes Sociais</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub1_Collect -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub1_Collect">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <time:hasTime rdf:resource="http://www.nanopub.org/nschema#pub1_CollectInterval"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#Web_of_Science"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub1_CollectInterval -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub1_CollectInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub1_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub1_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1016/j.geoforum.2019.06.017</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub1_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub1_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS1"/>
+        <np:hasDataProvenance rdf:resource="http://www.nanopub.org/nschema#pub1_Collect"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub1_Provenance"/>
+        <np:hasPublicationInfo rdf:resource="http://www.nanopub.org/nschema#pub1_publicationInfo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub1_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub1_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub1_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Chengliang_Liu_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Debin_Du_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Qinchang_Gui_Author"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">6/29/2019</dc:date>
+        <dc:title>Globalization of science andinternational scientific collaboration:A network perspective</dc:title>
+        <terms:publisher>Elsevier</terms:publisher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub1_publicationInfo -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub1_publicationInfo">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#PublicationInfo"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Romario_Laltany"/>
+        <time:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">10/11/2019</time:inXSDDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub2_Collect -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub2_Collect">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <time:hasTime rdf:resource="http://www.nanopub.org/nschema#pub2_CollectInterval"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#China_Na_onal_Knowledge_Infrastructure"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#Chinese_Social_Science_Cita_on_Index"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#Core_journals_of_Peking_University"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#Wanfang_Data_Knowledge_Service_Pla!orm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub2_CollectInterval -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub2_CollectInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub2_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub2_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1016/j.acalib.2019.02.004</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub2_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub2_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS2"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub2_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub2_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub2_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub2_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#ChaoLong_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#MarkA.Hall_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#QingChang_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#ZhiguangDuan_Author"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2/13/2019</dc:date>
+        <dc:title>Research characteristics on health law in China:Social network analysis</dc:title>
+        <terms:publisher>Elsevier</terms:publisher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub3_Collect -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub3_Collect">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <time:hasTime rdf:resource="http://www.nanopub.org/nschema#pub3_CollectInterval"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#ISI_WoS_Core_Collection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub3_CollectInterval -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub3_CollectInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub3_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub3_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1108/AJIM-06-2018-0155</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub3_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub3_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS3"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub3_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub3_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub3_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub3_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Sameer_Kumar_Author"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">3/27/2019</dc:date>
+        <dc:title>Do prestige and trust sustain knowledge-based communities? Evidence from Medical Ethics co-authorship networks in France</dc:title>
+        <terms:publisher>Aslib Journal of Information </terms:publisher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub4_Collect -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub4_Collect">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <time:hasTime rdf:resource="http://www.nanopub.org/nschema#pub4_CollectInterval"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#eAAEP_site"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub4_CollectInterval -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub4_CollectInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub4_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub4_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1108/JEFAS-06-2018-0062</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub4_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub4_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS4"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub4_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub4_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub4_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub4_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#JuanM.C.Larrosa_Author"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">9/26/2018</dc:date>
+        <dc:title>Co-authorshipnetworksof Argentineeconomists</dc:title>
+        <terms:publisher>Journal of Economics, Finance and Administrative Science</terms:publisher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub5_Collect -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub5_Collect">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <time:hasTime rdf:resource="http://www.nanopub.org/nschema#pub5_CollectInterval"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#Twitter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub5_CollectInterval -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub5_CollectInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <time:hasBeginning rdf:resource="http://www.nanopub.org/nschema#4_21_2017_Date"/>
+        <time:hasEnd rdf:resource="http://www.nanopub.org/nschema#5_7_2017_Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub5_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub5_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1007/s10639-018-9787-2</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub5_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub5_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS5"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub5_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub5_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub5_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub5_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#David_John_Lemay_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Paul_Bazelais_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Ram_B._Basnet_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Tenzin_Doleck_Author"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">8/10/2018</dc:date>
+        <dc:title>Social network analysis of twitter use during the AERA 2017
+annual conference</dc:title>
+        <terms:publisher>Springer Science - Education and Information Technologies (2019) </terms:publisher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub6_Collect -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub6_Collect">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <time:hasTime rdf:resource="http://www.nanopub.org/nschema#pub6_CollectInterval"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#Scopus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub6_CollectInterval -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub6_CollectInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub6_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub6_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1016/j.eiar.2019.106283</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub6_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub6_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS6"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub6_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub6_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub6_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub6_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Andreea_Nita_Author"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">6/25/2019</dc:date>
+        <dc:title>Empowering impact assessments knowledge and international research collaboration - A bibliometric analysis of Environmental Impact Assessment Review journal</dc:title>
+        <terms:publisher>Elsevier</terms:publisher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub7_Collect -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub7_Collect">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <time:hasTime rdf:resource="http://www.nanopub.org/nschema#pub7_CollectInterval"/>
+        <prov:atLocation rdf:resource="http://www.nanopub.org/nschema#Scopus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub7_CollectInterval -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub7_CollectInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub7_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub7_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1007/s11192-019-03211-y</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub7_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub7_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS7"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub7_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub7_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub7_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub7_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Amy_Jamison_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Bradley_W._Fenwick_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Jamie_Monson_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Jane_G._Payumo_Author"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">9/10/2019</dc:date>
+        <dc:title>Metrics‑based profling of university research
+engagement with Africa: research management, gender,
+and internationalization perspective</dc:title>
+        <terms:publisher>Springer</terms:publisher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub8_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub8_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/pubmed/24672564</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub8_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub8_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS8"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub8_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub8_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub8_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub8_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Ehsan_Geraei_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Firoozeh_Zare-Farashbandi_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Saba_Siamaki_Author"/>
+        <dc:title>Study of co-authorship network of papers in the Journal of Research in Medical Sciences using social network analysis</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub9_DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub9_DOI">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PrimaryResourceIdentifier"/>
+        <fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.5007/1518-2924.2006v11nesp1p179</fabio:hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub9_Nanopublication -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub9_Nanopublication">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <np:hasAssertion rdf:resource="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS9"/>
+        <np:hasProvenance rdf:resource="http://www.nanopub.org/nschema#pub9_Provenance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#pub9_Provenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#pub9_Provenance">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Provenance"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://www.nanopub.org/nschema#pub9_DOI"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Antonio_Braz_de_Oliveira_e_Silva_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Fernando_Silva_Parreiras_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Renato_Fabiano_Matheus_Author"/>
+        <prov:wasAttributedTo rdf:resource="http://www.nanopub.org/nschema#Tatiane_A._Silva_Parreiras_Author"/>
+        <dc:title>STUDY OF CO-AUTHORSHIP IN THE NETS AND THE INTERDISCIPLINARITY IN THE SCIENTIFIC PRODUCTION ON THE BASIS OF SOCIAL NETWORK ANALYSIS METHODS: EVALUATION OF THE POSGRADUATION PROGRAM IN INFORMATION SCIENCE - PPGCI/UFMG</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#web_of_Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#web_of_Science">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>Web of Science</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#4_21_2017_Date -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#4_21_2017_Date">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">04-21-2017</time:inXSDDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#5_7_2017_Date -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#5_7_2017_Date">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Wanfang_Data_Knowledge_Service_Pla!orm -->
+
+    <owl:NamedIndividual rdf:about="http://www.nanopub.org/nschema#Wanfang_Data_Knowledge_Service_Pla!orm">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <SNAMetric:hasName>Wanfang Data Knowledge Service Pla!orm (Wanfang)</SNAMetric:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS1">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS10 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS10">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS11 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS11">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS12 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS12">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS2 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS2">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS3 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS3">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS4 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS4">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS5 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS5">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS6 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS6">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS7 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS7">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS8 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS8">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS9 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/cliente/ontologies/2019/9/SCNAS#SCNAS9">
+        <rdf:type rdf:resource="http://www.nanopub.org/nschema#Assertion"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://orcid.org/0000-0001-6938-0820">
+        <terms:publisher>teste</terms:publisher>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/spar/datacite/FunderIdentifier"/>
+            <rdf:Description rdf:about="http://purl.org/spar/datacite/PersonalIdentifier"/>
+            <rdf:Description rdf:about="http://purl.org/spar/datacite/ResourceIdentifier"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
